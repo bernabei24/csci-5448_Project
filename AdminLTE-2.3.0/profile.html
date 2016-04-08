@@ -70,96 +70,7 @@
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <!-- Menu toggle button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the messages -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <!-- User Image -->
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <!-- Message title and timestamp -->
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <!-- The message -->
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                    </ul><!-- /.menu -->
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
-              </li><!-- /.messages-menu -->
-
-              <!-- Notifications Menu -->
-              <li class="dropdown notifications-menu">
-                <!-- Menu toggle button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- Inner Menu: contains the notifications -->
-                    <ul class="menu">
-                      <li><!-- start notification -->
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li><!-- end notification -->
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li>
-              <!-- Tasks Menu -->
-              <li class="dropdown tasks-menu">
-                <!-- Menu Toggle Button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-flag-o"></i>
-                  <span class="label label-danger">9</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- Inner menu: contains the tasks -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <!-- Task title and progress text -->
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <!-- The progress bar -->
-                          <div class="progress xs">
-                            <!-- Change the css width attribute to simulate progress -->
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
-              </li>
+              <!-- This is where notification icons would go -->
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
@@ -249,25 +160,6 @@
               <ul class="treeview-menu">
                 <li><a href="#">Card View</a></li>
                 <li><a href="#">List View</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-sort-amount-desc"></i> <span>Sort</span> <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Average Rating (Descending)</a></li>
-                <li><a href="#">Average Rating (Ascending)</a></li>
-                <li><a href="#">Recently Updated (Descending)</a></li>
-                <li><a href="#">Recently Updated (Ascending)</a></li>
-                <li><a href="#">Newest Mentor</a></li>
-                <li><a href="#">Oldest Mentor</a></li>
-                <li><a href="#">Number of Mentees (Descending)</a></li>
-                <li><a href="#">Number of Mentees (Ascending)</a></li>
-                <li><a href="#">Most Active</a></li>
-                <li><a href="#">Least Active</a></li>
-                <li><a href="#">Most Comments</a></li>
-                <li><a href="#">Fewest Comments</a></li>
-                <li><a href="#">Most Ratings</a></li>
-                <li><a href="#">Fewest Ratings</a></li>
               </ul>
             </li>
             <li><a href="stats.html"><i class="fa fa-area-chart"></i> <span>Stats</span></a></li><!-- pages/charts/chartjs.html -->
@@ -432,8 +324,9 @@
             <div class="col-md-10">
               <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a href="#settings" data-toggle="tab">Settings</a></li>
-                  <li><a href="#timeline" data-toggle="tab">Timeline (Comments)</a></li>
+                  <li class="active"><a href="#settings" data-toggle="tab">Edit Mentor Details</a></li>
+                  <li><a href="#timeline" data-toggle="tab">Feedback</a></li>
+                  <li><a href="#AddFeedback" data-toggle="tab">Add Feedback</a></li>
                 </ul>
                 <div class="tab-content">
                   
@@ -449,77 +342,57 @@
                       <!-- /.timeline-label -->
                       <!-- timeline item -->
                       <li>
-                        <i class="fa fa-envelope bg-blue"></i>
+                        <i class="fa bg-blue">5</i>
                         <div class="timeline-item">
-                          <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-                          <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+                          <!-- <span class="time"><i class="fa fa-clock-o"></i> 12:05</span> -->
+                          <h3 class="timeline-header">Person's name</h3>
                           <div class="timeline-body">
-                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                            This is the Feedback this person gave. Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
                             weebly ning heekya handango imeem plugg dopplr jibjab, movity
                             jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
                             quora plaxo ideeli hulu weebly balihoo...
                           </div>
-                          <div class="timeline-footer">
-                            <a class="btn btn-primary btn-xs">Read more</a>
-                            <a class="btn btn-danger btn-xs">Delete</a>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- END timeline item -->
-                      <!-- timeline item -->
-                      <li>
-                        <i class="fa fa-user bg-aqua"></i>
-                        <div class="timeline-item">
-                          <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-                          <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
-                        </div>
-                      </li>
-                      <!-- END timeline item -->
-                      <!-- timeline item -->
-                      <li>
-                        <i class="fa fa-comments bg-yellow"></i>
-                        <div class="timeline-item">
-                          <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
-                          <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
-                          <div class="timeline-body">
-                            Take me to your leader!
-                            Switzerland is small and neutral!
-                            We are more like Germany, ambitious and misunderstood!
-                          </div>
-                          <div class="timeline-footer">
-                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                          <div class="timeline-footer">                            
+                            <a class="btn btn-primary btn-xs">Edit</a>
                           </div>
                         </div>
                       </li>
                       <!-- END timeline item -->
                       <!-- timeline time label -->
                       <li class="time-label">
-                        <span class="bg-green">
-                          3 Jan. 2014
+                        <span class="bg-red">
+                          10 Feb. 2014
                         </span>
                       </li>
                       <!-- /.timeline-label -->
                       <!-- timeline item -->
                       <li>
-                        <i class="fa fa-camera bg-purple"></i>
+                        <i class="fa bg-blue">4</i>
                         <div class="timeline-item">
-                          <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
-                          <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                          <!-- <span class="time"><i class="fa fa-clock-o"></i> 12:05</span> -->
+                          <h3 class="timeline-header">Person's name</h3>
                           <div class="timeline-body">
-                            <img src="http://placehold.it/150x100" alt="..." class="margin">
-                            <img src="http://placehold.it/150x100" alt="..." class="margin">
-                            <img src="http://placehold.it/150x100" alt="..." class="margin">
-                            <img src="http://placehold.it/150x100" alt="..." class="margin">
+                            This is the Feedback this person gave. Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                            weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                            jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                            quora plaxo ideeli hulu weebly balihoo...
+                          </div>
+                          <div class="timeline-footer">                            
+                            <a class="btn btn-primary btn-xs">Edit</a>
                           </div>
                         </div>
                       </li>
                       <!-- END timeline item -->
+
+                      
                       <li>
                         <i class="fa fa-clock-o bg-gray"></i>
                       </li>
                     </ul>
                   </div><!-- /.tab-pane -->
 
+
+                  <!-- Edit Mentor Details -->
                   <div class="active tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group">
@@ -583,18 +456,6 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputSkills" class="col-sm-2 control-label">Rating</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter a rating, 1-5, 5 is high">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputBio" class="col-sm-2 control-label">Comment</label>
-                      <div class="col-sm-10">
-                        <textarea type="text" class="form-control" placeholder="Enter a comment to go along with rating"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group">
                       <label for="exampleInputFile" class="col-sm-2 control-label">Photo</label>
                       <input type="file" id="exampleInputFile">
                       <p class="help-block">Upload Mentor Photo</p>
@@ -606,7 +467,41 @@
                         </div>
                       </div>
                     </form>
-                  </div>
+                  </div><!-- /Edit Mentor Details -->
+
+                  <!-- Add Feedback -->
+                  <div class="tab-pane" id="AddFeedback">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Full Name">
+                      </div>
+                    </div>   
+                  
+                    <div class="form-group">
+                      <label for="inputSkills" class="col-sm-2 control-label">Rating</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Enter a rating, 1-5, 5 is high">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputBio" class="col-sm-2 control-label">Comment</label>
+                      <div class="col-sm-10">
+                        <textarea type="text" class="form-control" placeholder="Enter a comment to go along with rating"></textarea>
+                      </div>
+                    </div>
+                    
+                      
+                      <div class="form-group">
+                        <div class="col-sm-offset-10 col-sm-10">
+                          <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div><!-- /add feedback -->
+
+
                   </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
               </div><!-- /.nav-tabs-custom -->
