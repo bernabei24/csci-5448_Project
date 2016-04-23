@@ -239,10 +239,10 @@
                     </li>
                     <li class="list-group-item">
                       <b>Linkedin</b> <a href="https://www.linkedin.com/in/josevieitez" class="pull-right">linkedin.com/in/josevieitez</a>
-                    </li>
+                    </li>     
                   </ul>
 
-                  <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                  <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
               </div><!-- /.col -->
@@ -272,11 +272,8 @@
 
                   <hr>
                   
-
-
                   <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
                   <p class="text-muted">Malibu, California</p>
-
                   <hr>
 
 
@@ -396,9 +393,9 @@
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">Name</label>
+                      <label for="inputName2" class="col-sm-2 control-label">Name</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Full Name">
+                        <input type="text" class="form-control" id="inputName2" placeholder="Full Name">
                       </div>
                     </div>   
                     <div class="form-group">
@@ -408,62 +405,62 @@
                       </div>
                     </div>                
                     <div class="form-group">
-                      <label for="inputLinkedin" class="col-sm-2 control-label">Linkedin</label>
+                      <label for="inputLinkedin3" class="col-sm-2 control-label">Linkedin</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Linkedin URL">
+                        <input type="text" class="form-control" id="inputLinkedin3" placeholder="Linkedin URL">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputRole" class="col-sm-2 control-label">Role</label>
+                      <label for="inputRole2" class="col-sm-2 control-label">Role</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Current Role (i.e. CEO of Google)">
+                        <input type="text" class="form-control" id="inputRole2" placeholder="Current Role (i.e. CEO of Google)">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputLocation" class="col-sm-2 control-label">Location</label>
+                      <label for="inputLocation2" class="col-sm-2 control-label">Location</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Current Location">
+                        <input type="text" class="form-control" id="inputLocation2" placeholder="Current Location">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
+                      <label for="inputSkills2" class="col-sm-2 control-label">Skills</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter skills, separated by commas">
+                        <input type="text" class="form-control" id="inputSkills2" placeholder="Enter skills, separated by commas">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputLeads" class="col-sm-2 control-label">Lead Teams</label>
+                      <label for="inputLeadMentee" class="col-sm-2 control-label">Lead Teams</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter Teams they have lead mentored, separated by commas">
+                        <input type="text" class="form-control" id="inputLeadMentee" placeholder="Enter Teams they have lead mentored, separated by commas">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputMentee" class="col-sm-2 control-label">Mentored Teams</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter Teams they have ever mentored or met with, separated by commas">
+                        <input type="text" class="form-control" id="inputMentee" placeholder="Enter Teams they have ever mentored or met with, separated by commas">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputBio" class="col-sm-2 control-label">Bio</label>
+                      <label for="inputBio2" class="col-sm-2 control-label">Bio</label>
                       <div class="col-sm-10">
-                        <textarea type="text" class="form-control" placeholder="Bio"></textarea>
+                        <textarea type="text" class="form-control" id="inputBio2" placeholder="Bio"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputBio" class="col-sm-2 control-label">Notes</label>
+                      <label for="inputNotes2" class="col-sm-2 control-label">Notes</label>
                       <div class="col-sm-10">
-                        <textarea type="text" class="form-control" placeholder="Notes"></textarea>
+                        <textarea type="text" class="form-control" id="inputNotes2" placeholder="Notes"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputFile" class="col-sm-2 control-label">Photo</label>
-                      <input type="file" id="exampleInputFile">
+                      <label for="inputPhoto2" class="col-sm-2 control-label">Photo</label>
+                      <input type="file" id="inputPhoto2">
                       <p class="help-block">Upload Mentor Photo</p>
                     </div>
                       
                       <div class="form-group">
                         <div class="col-sm-offset-10 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button id="editMentorBtn" type="submit" class="btn btn-danger">Submit</button>
                         </div>
                       </div>
                     </form>
@@ -473,34 +470,34 @@
                   <div class="tab-pane" id="AddFeedback">
                     <form class="form-horizontal">
                       <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">Name</label>
+                      <label for="inputName2" class="col-sm-2 control-label">Name</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Full Name (or team name, or Anonimous)">
+                        <input type="text" class="form-control" id="inputName2" placeholder="Full Name (or team name, or Anonimous)">
                       </div>
                     </div>   
                     <div class="form-group">
-                      <label for="inputDate" class="col-sm-2 control-label">Date</label>
+                      <label for="inputDate1" class="col-sm-2 control-label">Date</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter the date this feedback was received">
+                        <input type="text" class="form-control" id="inputDate1" placeholder="Enter the date this feedback was received">
                       </div>
                     </div>                  
                     <div class="form-group">
                       <label for="inputRating" class="col-sm-2 control-label">Rating</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Enter a rating, 1-5, 5 is high">
+                        <input type="text" class="form-control" id="inputRating" placeholder="Enter a rating, 1-5, 5 is high">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="inputComment" class="col-sm-2 control-label">Comment</label>
+                      <label for="inputComment1" class="col-sm-2 control-label">Comment</label>
                       <div class="col-sm-10">
-                        <textarea type="text" class="form-control" placeholder="Enter a comment to go along with rating"></textarea>
+                        <textarea type="text" class="form-control" id="inputComment1" placeholder="Enter a comment to go along with rating"></textarea>
                       </div>
                     </div>
                     
                       
                       <div class="form-group">
                         <div class="col-sm-offset-10 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button id="addFeedbackBtn1" type="submit" class="btn btn-danger">Submit</button>
                         </div>
                       </div>
                     </form>
@@ -599,6 +596,8 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/app.min.js"></script>
+    <!-- Our App -->
+    <script src="js/script.js"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
